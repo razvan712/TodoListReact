@@ -1,0 +1,89 @@
+.unchecked-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 10px;
+  border-bottom: 1px solid #e0e0e0;
+  background-color: rgb(0, 255, 98);
+  color: black;
+  justify-content: space-around;
+}
+
+.input-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.input-container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+  .input-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  .checkmark {
+    position: absolute;
+    top: 7px;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+  }
+
+  .container input:checked ~ .checkmark {
+    background-color: white;
+  }
+  .item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 10px;
+    height: 40px;
+    border-bottom: 1px solid #e0e0e0;
+    background-color: rgb(0, 255, 98);
+    color: black;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .unchecked-tools {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .unchecked-list {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-height: 300px;
+    overflow-x: hidden;
+
+  }
+
+  button {
+    margin-left: 10px;
+  }
