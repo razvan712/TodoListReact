@@ -37,7 +37,7 @@ function shuffleArray(array) {
 
   return (<>
   <div className='todo-wrapper'>
-    <h1>Todo List</h1>
+    <h1 style={{color: 'white'}}>Todo List</h1>
 
     <Inputbar todos={todos} setTodos={setTodos} />
     <div className='items-wrapper'>

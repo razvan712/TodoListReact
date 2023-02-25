@@ -30,9 +30,9 @@ const EditItems = ({ todo, setTodos, setEditItem, setChecked }) => {
   return (
    <div className="edit-container">
     <form  onSubmit={handleSubmit}>
-      <input type="text" value={newName} onChange={handleChange} ref={inputRef} />
-      <button type="submit">Save</button>
-      <button type="button" onClick={() => setEditItem(null)}>
+      <input  className="search-input" type="text" value={newName} onChange={handleChange} ref={inputRef} />
+      <button className="shuffle-button" type="submit">Save</button>
+      <button className="shuffle-button" type="button" onClick={() => setEditItem(null)}>
         Cancel
       </button>
     </form>

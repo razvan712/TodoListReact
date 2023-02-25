@@ -4,9 +4,8 @@
   flex-direction: column;
   align-items: center;
   padding: 0 10px;
-  border-bottom: 1px solid #e0e0e0;
-  background-color: rgb(0, 255, 98);
-  color: black;
+  background: #161a2b;
+  color: white;
   justify-content: space-around;
 }
 
@@ -58,8 +57,8 @@
     padding: 0 10px;
     height: 40px;
     border-bottom: 1px solid #e0e0e0;
-    background-color: rgb(0, 255, 98);
-    color: black;
+    background: #161a2b;
+    color: white;
     justify-content: space-between;
     width: 100%;
   }
@@ -79,7 +78,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    max-height: 300px; /* set a maximum height */
+    max-height: 300px; 
     overflow-x: hidden;
 
   }
@@ -87,5 +86,9 @@
   button {
     margin-left: 10px;
   }
+
+ span {
+  color: black
+ }
 
   

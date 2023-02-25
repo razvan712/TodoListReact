@@ -35,14 +35,14 @@ const UncheckedItems = ({
         <div className="unchecked-tools">
           <form>
             <input
-            
+               className="search-input"
               required
               type="text"
               placeholder="Search"
               onChange={handleFilterChange}
             />
           </form>
-          <button onClick={() => setTodos(shuffleArray([...todos]))}>
+          <button className="shuffle-button" onClick={() => setTodos(shuffleArray([...todos]))}>
             Shuffle
           </button>
         </div>
@@ -64,7 +64,7 @@ const UncheckedItems = ({
                     />
                     <span className="checkmark"></span>
                     <div className='item-tools'>
-                    <button onClick={() => handleEdit(todo)}>edit</button>
+                    <button className="shuffle-button" onClick={() => handleEdit(todo)}>edit</button>
                     <button
                       onClick={() => {
                         setTodos(todos.filter((item) => item !== todo));

@@ -20,9 +20,9 @@ const CheckedItems = memo(({ todos, setTodos, checked, setChecked, shuffleArray,
     <h2>Checked Items</h2>
       <div className="checked-tools">
       <form>
-        <input required type="text" placeholder="Search" onChange={handleFilterChange} />
+        <input  className="search-input" required type="text" placeholder="Search" onChange={handleFilterChange} />
       </form>
-    <button onClick={() => setChecked(shuffleArray([...checked]))}>Shuffle</button>
+    <button className="shuffle-button" onClick={() => setChecked(shuffleArray([...checked]))}>Shuffle</button>
     </div>
     <div className="checked-list">
       {filteredChecked.map((todo, index) => {
@@ -38,8 +38,8 @@ const CheckedItems = memo(({ todos, setTodos, checked, setChecked, shuffleArray,
               <span className="checkmark">&#10004;</span>
             
             <div className='item-tools'>
-            <button onClick={() => handleEdit(todo)}>edit</button>
-            <button onClick={() => {
+            <button className="shuffle-button" onClick={() => handleEdit(todo)}>edit</button>
+            <button className="shuffle-button" onClick={() => {
                setChecked(checked.filter((item) => item !== todo));
               }}>x</button>
               </div>

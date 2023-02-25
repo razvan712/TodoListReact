@@ -33,9 +33,9 @@ const Inputbar = ({ todos, setTodos }) => {
           onChange={handleChange}
           value={todo}
           placeholder="Enter your todo here"
-          style={{width: '300px', height: '30px'}}
+          className="todo-input"
         />
-        <button type="submit">Add Item</button>
+        <button className="todo-button" type="submit">Add Item</button>
       </form>
     </div>
   );
